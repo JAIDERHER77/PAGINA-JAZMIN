@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PÁGINA JAZMÍN</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            text-align: center;
+            background-color: #002699;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .menu-item {
+            padding: 10px 20px;
+            border: 2px solid #002699;
+            border-radius: 10px;
+        }
+
+        .menu-title {
+            background-color: #4c82b1;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            display: none;
+        }
+
+        section h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        #biografia {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #biografia img {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            height: auto;
+            border: 5px solid #b3c0f7;
+            border-radius: 10px;
+        }
+
+        #biografia p {
+            text-align: justify;
+        }
+
+        #hobbies {
+            text-align: center;
+        }
+
+        .hobbies-box {
+            background-color: #b3c0f7;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .circle-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #4c82b1;
+            color: #fff;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #favoritos h3 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        #favoritos h4 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 24px;
+            background-color: #4c82b1;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        #audio-player {
+            text-align: center;
+        }
+
+        #paraiso-de-amor {
+            text-align: center;
+            background-color: #4c82b1;
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #nuevo-audio {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #favoritos-comida,
+        #favoritos-postre,
+        #favoritos-jugo,
+        #favoritos-fruta {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        #favoritos-comida {
+            background-color: #4c82b1;
+            color: #fff;
+        }
+
+        #favoritos-postre {
+            background-color: #e95467;
+            color: #fff;
+        }
+
+        #favoritos-jugo {
+            background-color: #ffcc29;
+            color: #fff;
+        }
+
+        #favoritos-fruta {
+            background-color: #ff7f50;
+            color: #fff;
+        }
+
+        .favoritos-text {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #datos-personales-boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .datos-personales-box {
+            background-color: #b3c0f7;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        #facebook-title,
+        #instagram-title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        #instagram-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 20%;
+            height: auto;
+            border: 5px solid #b3c0f7;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="menu-item"><div class="menu-title" onclick="showSection('inicio')">Inicio</div></li>
+            <li class="menu-item"><div class="menu-title" onclick="showSection('hobbies')">Hobbies</div></li>
+            <li class="menu-item"><div class="menu-title" onclick="showSection('favoritos')">Favoritos</div></li>
+            <li class="menu-item"><div class="menu-title" onclick="showSection('datos')">Datos Personales</div></li>
+        </ul>
+    </nav>
+
+    <h1>JAZMÍN SALAS ALVAREZ</h1>
+
+    <section id="inicio">
+        <h2>Biografía</h2>
+        <div id="biografia">
+            <p>Mi nombre es Jazmin Salas, nací en La Palma, Cundinamarca el 26 de abril de 2007. Tengo 16 años y vivo en Bogotá, en Barrios Unidos. Estudio en el colegio Tomás Carrasquilla, y vivo con mis padres y dos hermanas. Además, tengo un gato y soy la menor de la familia.</p>
+            <img src="D:\Escritorio\JAZMIN.jfif" alt="Descripción de la imagen">
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2 style="text-transform: uppercase;">Hobbies</h2>
+        <div id="hobbies-content">
+            <div class="circle-row">
+                <div class="circle" style="background-color: #5fd25d;">DORMIR</div>
+                <div class="circle" style="background-color: #ffcc29;">CREAR COSAS</div>
+                <div class="circle" style="background-color: #ff7f50;">IR A LA IGLESIA</div>
+            </div>
+            <div class="circle-row">
+                <div class="circle" style="background-color: #e95467;">REIRME</div>
+                <div class="circle" style="background-color: #ff66b3;">CANTAR</div>
+                <div class="circle" style="background-color: #5fd25d;">PEINAR</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="favoritos">
+        <h3>CANCIONES</h3>
+        <h4>VIDA ENCONTRE</h4>
+        <div id="audio-player">
+            <audio controls>
+                <source src="https://drive.google.com/uc?id=1c8mvDuXMYfQjb0NbSuotYeoEk4upHlVh" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+        <div id="paraiso-de-amor">
+            PARAISO DE AMOR
+        </div>
+        <div id="nuevo-audio">
+            <audio controls>
+                <source src="https://drive.google.com/uc?id=1E4qw3hhj2VvaIHvVGsorW3d0gfEa2byQ" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+        <div id="favoritos-comida">
+            <p>
+                COMIDA:<br>
+                <span class="favoritos-text">Champiñones con piernitas de pollo</span>
+            </p>
+        </div>
+        <div id="favoritos-postre">
+            <p>
+                POSTRE:<br>
+                <span class="favoritos-text">De limón y lulo</span>
+            </p>
+        </div>
+        <div id="favoritos-jugo">
+            <p>
+                JUGO:<br>
+                <span class="favoritos-text">Lulo y maracuyá</span>
+            </p>
+        </div>
+        <div id="favoritos-fruta">
+            <p>
+                FRUTA:<br>
+                <span class="favoritos-text">Kiwi, durazno y cereza</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="datos">
+        <h2>Datos Personales</h2>
+        <div id="datos-personales-boxes">
+            <div class="datos-personales-box">
+                <p class="datos-personales-text">EDAD: 16 años</p>
+            </div>
+            <div class="datos-personales-box">
+                <p class="datos-personales-text">FECHA DE NACIMIENTO: 26/04/2007</p>
+            </div>
+            <div class="datos-personales-box">
+                <p class="datos-personales-text">TARJETA DE IDENTIDAD: 1069052929</p>
+            </div>
+        </div>
+        <h2 id="facebook-title">FACEBOOK</h2>
+        <img src="D:\Escritorio\FACEBOOK.jfif" alt="Descripción de la imagen">
+        <h2 id="instagram-title">INSTAGRAM</h2>
+        <img id="instagram-image" src="D:\Escritorio\INSTAGRAM.jfif" alt="Descripción de la imagen">
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+    <script>
+        showSection('inicio');
+    </script>
+
+</body>
+</html>
